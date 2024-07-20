@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Travel App</h1>
+        <nav>
+            <ul>
+                <li><a href="#search-flights">Home</a></li>
+                <li><a href="#bookings">View Bookings</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <section id="search-flights">
+                <h2>Search Flights</h2>
+                <form id="flight-search-form">
+                    <label for="source">Source:</label>
+                    <select id="source" name="source">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+        
+                    <label for="destination">Destination:</label>
+                    <select id="destination" name="destination">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+        
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+        
+                    <button type="submit">Search</button>
+                </form>
+                <div id="flight-results"></div>
+            </section>
+
+<!--
+            <section id="add-flight">
+                <h2>Add Flight</h2>
+                <form id="add-flight-form">
+                    <label for="add-source">Source:</label>
+                    <select id="add-source" name="add-source">
+                        <option value="A">Kota A</option>
+                        <option value="B">Kota B</option>
+                        <option value="C">Kota C</option>
+                    </select>
+        
+                    <label for="add-destination">Destination:</label>
+                    <select id="add-destination" name="add-destination">
+                        <option value="1">Tujuan 1</option>
+                        <option value="2">Tujuan 2</option>
+                        <option value="3">Tujuan 3</option>
+                    </select>
+        
+                    <label for="add-date">Date:</label>
+                    <input type="date" id="add-date" name="add-date" required>
+        
+                    <label for="add-price">Price:</label>
+                    <input type="number" id="add-price" name="add-price" required>
+        
+                    <button type="submit">Add Flight</button>
+                </form>
+            </section>
+-->
+
+        <section id="hotels">
+            <h2>Select Hotel Room</h2>
+            <form id="hotel-selection-form">
+                <label for="hotel-room">Hotel Room:</label>
+                <select id="hotel-room" name="hotel-room">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+
+                <button type="submit">Check Price</button>
+            </form>
+            <div id="hotel-results"></div>
+        </section>
+        
+
+        <section id="booking-actions">
+            <!-- Tempat untuk tombol 'Book Now' -->
+        </section>
+
+        <section id="bookings">
+            <h2>Your Bookings</h2>
+            <div id="booking-list">
+                <!-- Tabel bookings akan dimasukkan oleh script.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Contact Us
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
